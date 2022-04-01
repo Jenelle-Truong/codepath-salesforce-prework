@@ -69,7 +69,7 @@ To make this game more challenging and fun for a broader audience, I would spend
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://ucsd.zoom.us/rec/share/-Wg1WpMYWsLwuKsLIWu4t_n0sPAH18sRRbIoG5auMkrNpBPMl08CQX6mN2bcAZB2.JJpXMCEI04dtsyR-?startTime=1648848737000 (Passcode: a%S5a1U&))
 
 
 ## License
