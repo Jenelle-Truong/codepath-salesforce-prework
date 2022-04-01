@@ -39,9 +39,9 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
-![](gif2-link-here)
-![](gif3-link-here)
+![] https://media.giphy.com/media/P0uRLF6OTuX7wkF8RJ/giphy.gif
+![] https://media.giphy.com/media/JMcin7lMPhBpbeI0p6/giphy.gif
+![] https://media.giphy.com/media/4QOKU8OuteAkwZbn17/giphy.gif
 ![](gif4-link-here)
 
 ## Reflection Questions
@@ -51,14 +51,17 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 * https://www.w3schools.com/jsref/met_win_clearinterval.asp
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+After implementing the basic features of my game, I wanted to learn more about the power of Javascript and further bring my game to life. Consequently, I challenged myself to implement a one-minute timer that counts down the time players have to complete and win the game.  
+
+While working on the timer feature, I encountered two main issues: developing the logic for how many times the setInterval() method is called and displaying and resetting the timer at the start and end of the game. Since the timer is supposed to update every second, I first tried to call the setInterval() method within a for loop. As the for loop iterated from fifty-nine down to zero, each iteration was passed as an argument to the method that displays the number of seconds left on the webpage. However, without a way to delay each iteration by one second, the rapid execution of the for loop caused the timer to display zero as the number of seconds left. I then decided to create a global variable secsLeft instead to keep track of how many times to call the setInterval() method. By initializing secsLeft to fifty-nine and decrementing after each setInterval() call, the game would end when secsLeft reached zero. Initially, I initially elected to pass the id returned by setInterval() as an argument to the method that would call clearInterval(). However, the game continued while the timer would continue to display negative seconds after secsLeft reached zero. To give both functions access to the interval id, I decided to make a global variable to store the id and initialize the variable upon first execution of setInterval(). By utilizing global variables and referring to the Javascript basics presented in the submission tutorial, I was able to successfully create the countdown timer feature.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+From this project, I learned how HTML, CSS, and Javascript are flexible, allowing the developer to add additional functionality at any given time. As a result, the development process feels a lot more creative and opens up infinite design decisions. However, how does one approach the development process in a systematic manner when creating a website or a web application from scratch?
+
+Meanwhile, this project also demonstrated how HTML elements can be styled by CSS rules, and how Javascript can manipulate these elements. Since vanilla Javascript already introduces so much functionality, how do Javascript libraries and frameworks differ, and what considerations are made in selecting the appropriate technology?
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
-
+To make this game more challenging and fun for a broader audience, I would spend additional time creating modes of varying difficulty. Users would be able to select the mode of their choice by clicking on the corresponding buttons made available after clicking the start button. The most basic mode would be the game given in the tutorial. Meanwhile, in the more challenging modes, the buttons would rearrange themselves after the initial tones are played in each round. Another mode could also play a short section of a popular song with fast playback, but switch up in one of the final few rounds in an attempt to confuse the player at the last minute. I would also create modes with highly contrasting colors to be inclusive of colorblind people and audio effects at frequencies audible to those who are hard of hearing.
 
 
 ## Interview Recording URL Link
